@@ -1,0 +1,127 @@
+<div class="side-nav-wrap dark nav-side">
+    <div class="navbar no-radius  left"><a class="navbar-brand ng-scope">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="24" height="24">
+            <path d="M 4 4 L 44 4 L 44 44 Z" fill="#a88add"></path>
+            <path d="M 4 4 L 34 4 L 24 24 Z" fill="rgba(0,0,0,0.15)"></path>
+            <path d="M 4 4 L 24 4 L 4  44 Z" fill="#0cc2aa"></path>
+        </svg>
+        <span class="navbar-brand">Flatkit</span></a>
+    </div>
+    <div flex="" class="side-list">
+        <nav class="scroll nav-light">
+                <ul class="nav">
+                    <li class="nav-header"><small class="text-muted">Main</small></li>
+                    <li ui-sref-active="active" class="active">
+                        <a>
+                            <span class="nav-icon"><span class="material-icons">looks</span></span>
+                            <span class="nav-text">Dashboard</span>
+                        </a>
+                    </li>
+                    <li ui-sref-active="active" class="active">
+                        <a>
+                            <span class="nav-icon"><span class="material-icons">apps</span></span>
+                            <span class="nav-text">Apps</span>
+                        </a>
+                        <a>
+                            <span class="nav-label"><b class="label rounded label-sm warn">5</b></span>
+                            <span *ngIf="upArrow" class="material-icons arrow"> arrow_drop_down </span>
+                            <span *ngIf="!upArrow" class="material-icons arrow"> arrow_drop_up </span>
+                        </a>
+                    </li>
+                    <li ui-sref-active="active" class="active">
+                        <a>
+                            <span class="nav-icon"><span class="material-icons">scatter_plot</span></span>
+                            <span class="nav-text">Layouts</span>
+                        </a>
+                        <a>
+                            <span *ngIf="upArrow" class="material-icons arrow"> arrow_drop_down </span>
+                            <span *ngIf="!upArrow" class="material-icons arrow"> arrow_drop_up </span>
+                        </a>
+                    </li>
+                    <li ui-sref-active="active" class="active">
+                        <a>
+                            <span class="nav-icon"><span class="material-icons">subject</span></span>
+                            <span class="nav-text">Widgets</span>
+                        </a>
+                    </li>
+                    <li class="nav-header"><small class="text-muted">Components</small></li>
+                    <li ui-sref-active="active" class="active">
+                        <a>
+                            <span class="nav-icon"><span class="material-icons">tune</span></span>
+                            <span class="nav-text">UI Kit</span>
+                        </a>
+                        <a>
+                            <span class="nav-label"><b class="label squre label-sm warn">5</b></span>
+                            <span *ngIf="upArrow" class="material-icons arrow"> arrow_drop_down </span>
+                            <span *ngIf="!upArrow" class="material-icons arrow"> arrow_drop_up </span>
+                        </a>
+                    </li>
+                    <li ui-sref-active="active" class="active">
+                        <a>
+                            <span class="nav-icon"><span class="material-icons">flip</span></span>
+                            <span class="nav-text">Pages</span>                           
+                        </a>
+                        <a>
+                            <span class="nav-label">9</span>
+                            <span *ngIf="upArrow" class="material-icons arrow"> arrow_drop_down </span>
+                            <span *ngIf="!upArrow" class="material-icons arrow"> arrow_drop_up </span>
+                        </a>
+                    </li>
+                    <li ui-sref-active="active" class="active">
+                        <a>
+                            <span class="nav-icon"><span class="material-icons">radio_button_checked</span></span>
+                            <span class="nav-text">Forms</span>                           
+                        </a>
+                        <a>
+                            <span *ngIf="upArrow" class="material-icons arrow"> arrow_drop_down </span>
+                            <span *ngIf="!upArrow" class="material-icons arrow"> arrow_drop_up </span>
+                        </a>
+                    </li>
+                    <li ui-sref-active="active" class="active">
+                        <a>
+                            <span class="nav-icon"><span class="material-icons">toc</span></span>
+                            <span class="nav-text">Tables</span>                           
+                        </a>
+                        <a>
+                            <span *ngIf="upArrow" class="material-icons arrow"> arrow_drop_down </span>
+                            <span *ngIf="!upArrow" class="material-icons arrow"> arrow_drop_up </span>
+                        </a>
+                    </li>
+                    <li ui-sref-active="active" class="active">
+                        <a>
+                            <span class="nav-icon"><span class="material-icons">leaderboard</span></span>
+                            <span class="nav-text">Charts</span>                           
+                        </a>
+                        <a>
+                            <span class="nav-label"><b class="label squre-blue label-sm warn">N</b></span>
+                            <span *ngIf="upArrow" class="material-icons arrow"> arrow_drop_down </span>
+                            <span *ngIf="!upArrow" class="material-icons arrow"> arrow_drop_up </span>
+                        </a>
+                    </li>
+                    <li class="nav-header"><small class="text-muted">Help</small></li>
+                    <li ui-sref-active="active" class="active">
+                        <a>
+                            <span class="nav-text">Documents</span>                           
+                        </a>
+                    </li>
+                </ul>
+        </nav>
+    </div>
+    <div flex-no-shrink="" class="b-t">
+        <div class="nav-fold ng-scope">
+            <a>
+                <span class="pull-left">
+                    <span class="material-icons w-40 img-circle">
+                        person
+                        </span>
+                    </span> 
+                <span class="clear hidden-folded p-x">
+                    <span class="block _500">Jean Reyes</span> 
+                    <small class="d-flex text-muted">
+                        <span class="material-icons">fiber_manual_record</span>online
+                    </small>
+                </span>
+            </a>
+        </div>
+    </div>
+</div>

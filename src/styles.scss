@@ -1,0 +1,73 @@
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import '~@angular/material/theming';
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$admin-dash-primary: mat-palette($mat-indigo);
+$admin-dash-accent: mat-palette($mat-pink, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$admin-dash-warn: mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$admin-dash-theme: mat-light-theme($admin-dash-primary, $admin-dash-accent, $admin-dash-warn);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($admin-dash-theme);
+
+/* You can add global styles to this file, and also import other style files */
+body {
+    background-color: #f3f3f3;
+    font-size: 0.875em;
+    overflow-x: hidden;
+    color: #353c4e;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  * {
+    &:focus {
+      outline: none;
+    }
+    a {
+      font-size: 14px;
+      &:focus, &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  
+  p {
+    font-size: 13px;
+  }
+  
+  ul {
+    padding-left: 0;
+    list-style-type: none;
+    margin-bottom: 0;
+  }
+  
+  .media-left {
+    padding-right: 20px;
+  }
+  
+  @media only screen and (min-width: 1400px) {
+    p {
+      font-size: 14px;
+    }
+  }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
